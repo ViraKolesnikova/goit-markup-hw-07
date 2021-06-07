@@ -59,6 +59,21 @@ img {
   display: block;
 }
 
+/*Скрытые заголовоки*/
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*Стилизация шапки*/
 .container {
   width: 1200px;
@@ -77,8 +92,8 @@ img {
 .navigation,
 .nav-menu,
 .contact-list,
-.features,
-.images,
+.features-list,
+.services-list,
 .cards,
 .filtr-button-list,
 .gallery-list,
@@ -102,6 +117,8 @@ img {
 }
 
 .nav-menu__link {
+  display: block;
+  padding: 32px 0;
   color: var(--title-color);
   font-weight: 500;
   font-size: 14px;
@@ -109,15 +126,6 @@ img {
   letter-spacing: 0.02em;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.nav-menu__item:not(:last-child),
-.contact-list__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.nav-menu__link {
-  display: block;
-  padding: 32px 0;
 }
 
 .nav-menu__link:hover,
@@ -137,6 +145,11 @@ img {
   margin-top: 28px;
   background-color: var(--accent);
   border-radius: 2px;
+}
+
+.nav-menu__item:not(:last-child),
+.contact-list__item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contact-list {
@@ -171,7 +184,18 @@ img {
   text-align: center;
 }
 
-.main-title {
+.hero-section__image {
+  padding: 200px 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  height: 600px;
+  background-color: var(--hero-footer-background);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+}
+
+.hero-section__title {
   margin: 0 auto 30px;
 
   color: var(--white-color);
@@ -183,16 +207,7 @@ img {
   text-transform: uppercase;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.no-padding-top {
-  padding-top: 0;
-}
-
-.oder-button {
+.hero-section__oder-button {
   padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
@@ -210,37 +225,60 @@ img {
   cursor: pointer;
 }
 
-.oder-button:active,
+.hero-section__oder-button:active,
 .subscribe-btn:active,
 .call-back-submit-btn:active {
   background-color: var(--action-btn-color);
 }
-.hero-image {
-  padding: 200px 0;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1600px;
-  height: 600px;
-  background-color: var(--hero-footer-background);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero.jpg);
-}
+
 
 /*Особенности оказания услуг*/
-.features-padding {
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features-section {
   padding-top: 91px;
 }
-.features {
+
+.features-section__title,
+.services-section__title {
+  margin-bottom: 50px;
+
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.features-list {
   margin-top: -40px;
 }
-.feature-item {
+
+.features-list__item {
   width: 270px;
 }
-.feature-item:not(:last-child) {
+
+.features-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.features-title {
+.features-list__item--icon-background {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-background-color);
+}
+
+.features-list__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.features-list__title {
   margin-top: 30px;
   margin-bottom: 10px;
 
@@ -251,64 +289,29 @@ img {
   text-transform: uppercase;
 }
 
-.features-discription {
+.features-list__discription {
   font-size: 14px;
   line-height: 1.71;
 }
 
-.section-title {
-  margin-bottom: 50px;
-
-  color: var(--title-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-}
-/*Скрытый заголовок*/
-.hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.icon-antenna,
-.icon-clock,
-.icon-diagram,
-.icon-astronaut {
-  width: 70px;
-  height: 70px;
-}
-
-.icon-background {
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--secondary-background-color);
-}
 
 /*Секция чем мы занимаемся*/
-.images {
+.services-section {
+  padding-top: 0;
+}
+
+.services-list {
   justify-content: space-between;
 }
 
-.service-item {
+.services-list__item {
   position: relative;
 }
 
-.service-title {
+.services-list__title {
   position: absolute;
   bottom: 0;
-  width: 370px;
+  width: 100%;
   padding-top: 27px;
   padding-bottom: 27px;
   text-align: center;
