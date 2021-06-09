@@ -224,7 +224,7 @@
                 <h3 class="employees-cards__title">Николай Тарасов</h3>
                 <p  class="employees-cards__text" lang="en">Marketing</p>
                 <ul class="employee-social-links">
-                  <li class="semployee-social-links__item">
+                  <li class="employee-social-links__item">
                     <a class="social-link" href="https://www.instagram.com/">
                       <svg class="social-link__icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
@@ -347,50 +347,49 @@
       </section>
     </main>
     <!--Подвал-->
-    <footer>
-      <div class="container footer">
-        <div class="logo-address-block">
+    <footer class="page-footer">
+      <div class="footer container">
+        <div class="footer-contact">
           <a href="" lang="en" class="logo logo-footer link"
-            ><span class="logo-first-part">Web</span>Studio</a
-          >
-          <address class="webstudio-address">
+            ><span class="logo--first-part">Web</span>Studio</a>
+          <address class="footer-contact__address">
             г. Киев, пр-т Леси Украинки, 26
-            <ul class="address-item">
+            <ul class="address-list">
               <li>
-                <a href="mailto:info@devstudio.com" class="footer-contacts link">info@devstudio.com</a>
+                <a href="mailto:info@devstudio.com" class="address-list__link link">info@devstudio.com</a>
               </li>
-              <li class="address-item">
-                <a href="tel:+380961111111" class="footer-contacts link">+38 096 111 11 11</a>
+              <li class="address-list__item">
+                <a href="tel:+380961111111" class="address-list__link link">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="invitation-block">
-          <p class="invitation">присоединяйтесь</p>
+        <div class="footer-invitation">
+          <p class="footer-invitation__text">присоединяйтесь</p>
           <ul class="footer-social-link-list">
-            <li class="footer-social-link-item">
-              <a class="footer-social-link" href="https://www.instagram.com/">
+            <li class="footer-social-links__item">
+              <a class="social-link social-link--footer-colors" href="https://www.instagram.com/">
                 <svg class="social-link__icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-link-item">
-              <a class="footer-social-link" href="">
+            <li class="footer-social-links__item">
+              <a class="social-link social-link--footer-colors" href="">
                 <svg class="social-link__icon">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-link-item">
-              <a class="footer-social-link" href="">
+            <li class="footer-social-links__item">
+              <a class="social-link social-link--footer-colors" href="">
                 <svg class="social-link__icon">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-link-item">
-              <a class="footer-social-link" href="">
+            <li class="footer-social-links__item">
+              <a class="social-link social-link--footer-colors" href="">
                 <svg class="social-link__icon">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -399,11 +398,11 @@
           </ul>
         </div>
         <form class="subscribing-form">
-          <label for="email" class="subscribe-text">Подпишитесь на рассылку</label>
-          <div class="subscribing-area">            
-            <input type="email" name="email" id="email" placeholder="E-mail" class="email-input" required/>   
+          <label for="email" class="subscribing-form__text">Подпишитесь на рассылку</label>
+          <div class="subscribing-form__area">            
+            <input type="email" name="email" id="email" placeholder="E-mail" class="subscribing-form__input" required/>   
             <button type="submit" class="subscribe-btn">Подписаться
-              <svg class="telegram-icon" width="24" height="24">
+              <svg class="subscribe-btn__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-telegram"></use>
               </svg>
             </button>  
@@ -416,49 +415,49 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-modal" data-modal-close>
-          <svg class="close-modal-icon" width="11" height="11">
+          <svg class="close-modal__icon" width="11" height="11">
             <use href="./images/icons.svg#close-modal"></use>
           </svg>
         </button>
-        <p class="call-back-form-title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
         <form name="call-back-form" autocomplete="on" class="call-back-form">
           <label class="form-field">
-            <span class="label-text">Имя</span>
-            <span class="input-with-icon">
-              <input class="input-field" type="text" name="user-name" autofocus>
-              <svg class="call-back-input-icon">
+            <span class="form-field__text">Имя</span>
+            <span class="form-field__input--icon-position">
+              <input class="form-field__input" type="text" name="user-name" autofocus>
+              <svg class="form-field__icon">
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
             </span>
           </label>
           <label class="form-field">
-            <span class="label-text">Телефон</span>
-            <span class="input-with-icon">
-              <input class="input-field" type="tel" name="phone">
-              <svg class="call-back-input-icon">
+            <span class="form-field__text">Телефон</span>
+            <span class="form-field__input--icon-position">
+              <input class="form-field__input" type="tel" name="phone">
+              <svg class="form-field__icon">
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
             </span>
           </label>
           <label class="form-field">
-            <span class="label-text">Почта</span>
-            <span class="input-with-icon">
-              <input class="input-field" type="email" name="email">
-              <svg class="call-back-input-icon">
+            <span class="form-field__text">Почта</span>
+            <span class="form-field__input--icon-position">
+              <input class="form-field__input" type="email" name="email">
+              <svg class="form-field__icon">
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
             </span>
          </label>
           <label class="form-field">
-            <span class="label-text">Комментарий</span>
-            <textarea class="textarea-field" name="comment" placeholder="Введите текст"></textarea>
+            <span class="form-field__text">Комментарий</span>
+            <textarea class="form-field__textarea" name="comment" placeholder="Введите текст"></textarea>
           </label>
-          <label class="agreement-text" for="agreement">
+          <label class="agreement" for="agreement">
             <input class="checkbox" type="checkbox" name="agreement" value="agreement" id="agreement">  
-            <span class="checkbox-icon"></span>
-            <span class="checkbox-agreement">
+            <span class="checkbox__icon"></span>
+            <span class="checkbox__text">
               Соглашаюсь с рассылкой и принимаю 
-              <a href="">Условия договора</a>
+              <a class="agreement__link" href="">Условия договора</a>
             </span>
           </label>          
           <button class="call-back-submit-btn" type="submit">Отправить</button>
