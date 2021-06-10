@@ -9,7 +9,7 @@
 /*цвет телефона и мейла в футере rgba(255, 255, 255, 0,6)*/
 /*цвет рамки в хедере #ECECEC*/
 /*цвет ссылок на соцсети #AFB1B8*/
-/* :root {
+:root {
   --primery-text-color: #757575;
   --title-color: #212121;
   --white-color: #ffffff;
@@ -27,17 +27,17 @@
   --overlay-bg: rgba(33, 150, 243, 0.9);
   --backdrop-color: rgba(0, 0, 0, 0.2);
   --action-btn-color: #188ce8;
-} */
+}
 
-/* body {
+body {
   background-color: var(--main-background-color);
   color: var(--primery-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-} */
+}
 
 /*Утилиты*/
-/* ul,
+ul,
 p {
   list-style: none;
   margin: 0;
@@ -57,10 +57,10 @@ h4 {
 
 img {
   display: block;
-} */
+}
 
 /*Скрытые заголовоки*/
-/* .hidden {
+.hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -72,14 +72,14 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 
-/* .container {
+.container {
   width: 1200px;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-} */
+}
 
 /*Стилизация шапки*/
 .page-header {
@@ -102,7 +102,7 @@ img {
   align-items: center;
 }
 
-/* .logo {
+.logo {
   margin-right: 93px;
 
   color: var(--second-part-of-logo);
@@ -114,7 +114,7 @@ img {
 
 .logo--first-part {
   color: var(--accent);
-} */
+}
 
 .nav-menu__link {
   display: block;
@@ -207,7 +207,7 @@ img {
   text-transform: uppercase;
 }
 
-/* .hero-section__oder-button {
+.hero-section__oder-button {
   padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
@@ -223,13 +223,13 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-} */
+}
 
-/* .hero-section__oder-button:active,
+.hero-section__oder-button:active,
 .subscribe-btn:active,
 .call-back-submit-btn:active {
   background-color: var(--action-btn-color);
-} */
+}
 
 /*Особенности оказания услуг*/
 .section {
@@ -448,10 +448,10 @@ img {
   margin-right: 70px;
 }
 
-/* .logo-footer {
+.logo-footer {
   margin-right: 0;
   color: var(--white-color);
-} */
+}
 
 .footer-contact__address {
   margin-top: 20px;
@@ -531,7 +531,8 @@ img {
 .subscribing-form__input::placeholder {
   color: var(--phone-mail-in-footer);
 }
-/* .subscribe-btn {
+
+.subscribe-btn {
   display: flex;
   align-items: center;
   padding: 10px 28px;
@@ -551,7 +552,7 @@ img {
 .subscribe-btn__icon {
   margin-left: 10px;
   fill: var(--white-color);
-} */
+}
 
 /*==============Портфолио================*/
 
@@ -562,7 +563,7 @@ img {
 
 .filtr-button-list__item:not(:last-child) {
   margin-right: 8px;
-}
+} 
 
 .filtr-button {
   padding: 6px 22px;
@@ -852,7 +853,7 @@ img {
   vertical-align: middle;
 }
 
-/* .call-back-submit-btn {
+.call-back-submit-btn {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -871,4 +872,4 @@ img {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-} */
+}
